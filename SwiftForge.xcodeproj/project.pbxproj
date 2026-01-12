@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A92A486B2F15B4ED00F26A95 /* MLX in Frameworks */ = {isa = PBXBuildFile; productRef = A92A486A2F15B4ED00F26A95 /* MLX */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		A92A485D2F15375500F26A95 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92A486B2F15B4ED00F26A95 /* MLX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = SwiftForge;
 			packageProductDependencies = (
+				A92A486A2F15B4ED00F26A95 /* MLX */,
 			);
 			productName = SwiftForge;
 			productReference = A92A485F2F15375500F26A95 /* SwiftForge */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = A92A48562F15375500F26A95;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A92A48692F15B4ED00F26A95 /* XCRemoteSwiftPackageReference "mlx-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A92A48602F15375500F26A95 /* Products */;
 			projectDirPath = "";
@@ -295,6 +304,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A92A48692F15B4ED00F26A95 /* XCRemoteSwiftPackageReference "mlx-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.30.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A92A486A2F15B4ED00F26A95 /* MLX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A92A48692F15B4ED00F26A95 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A92A48572F15375500F26A95 /* Project object */;
 }
